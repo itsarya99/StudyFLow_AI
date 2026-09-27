@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>StudyFlow AI</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1>StudyFlow AI 🤖</h1>
+        <p>Your personal AI-powered study planner</p>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Study Planner Form -->
+        <section class="card planner">
+          <h2>Create Your Study Plan</h2>
+
+          <div class="form-group">
+            <label for="subjects">Subjects</label>
+
+            <input
+              type="text"
+              id="subjects"
+              placeholder="e.g. DSA, OOPS, OS, FSD"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="hours">Study Hours Per Day</label>
+
+            <input
+              type="number"
+              id="hours"
+              placeholder="e.g. 4"
+              min="1"
+              max="24"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="examDate">Exam Date</label>
+
+            <input type="date" id="examDate" />
+          </div>
+
+          <div class="form-group">
+            <label for="weakSubjects">Weak Subjects</label>
+
+            <input type="text" id="weakSubjects" placeholder="e.g. DSA, OS" />
+          </div>
+
+          <button id="generateBtn">✨ Generate Study Plan</button>
+        </section>
+
+        <!-- Generated Plan -->
+        <section class="card plan">
+          <h2>🤖 Your Study Plan</h2>
+
+          <div id="planOutput">
+            <p class="placeholder">
+              Your personalized study plan will appear here.
+            </p>
+          </div>
+        </section>
+
+        <!-- Progress -->
+        <section class="card progress">
+          <h2>📊 Your Progress</h2>
+
+          <div id="progressOutput">
+            <p class="placeholder">
+              Complete your study tasks to track your progress.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
